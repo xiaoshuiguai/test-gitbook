@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第三节 · 开发文档</title>
+        <title>端口规划 · 开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -131,7 +131,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="2-part.md" />
+    <link rel="next" href="activemq.html" />
     
     
     <link rel="prev" href="./" />
@@ -295,9 +295,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../1-chapter/">
+        <li class="chapter " data-level="1.2" data-path="./">
             
-                <a href="../1-chapter/">
+                <a href="./">
             
                     
                         <b>1.2.</b>
@@ -311,9 +311,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../1-chapter/port.html">
+        <li class="chapter active" data-level="1.2.1" data-path="port.html">
             
-                <a href="../1-chapter/port.html">
+                <a href="port.html">
             
                     
                         <b>1.2.1.</b>
@@ -326,9 +326,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../1-chapter/activemq.html">
+        <li class="chapter " data-level="1.2.2" data-path="activemq.html">
             
-                <a href="../1-chapter/activemq.html">
+                <a href="activemq.html">
             
                     
                         <b>1.2.2.</b>
@@ -341,9 +341,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../1-chapter/zookeeper.html">
+        <li class="chapter " data-level="1.2.3" data-path="zookeeper.html">
             
-                <a href="../1-chapter/zookeeper.html">
+                <a href="zookeeper.html">
             
                     
                         <b>1.2.3.</b>
@@ -361,9 +361,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../2-chapter/">
             
-                <a href="./">
+                <a href="../2-chapter/">
             
                     
                         <b>1.3.</b>
@@ -377,9 +377,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="1-part.html">
+        <li class="chapter " data-level="1.3.1" data-path="../2-chapter/1-part.html">
             
-                <a href="1-part.html">
+                <a href="../2-chapter/1-part.html">
             
                     
                         <b>1.3.1.</b>
@@ -392,7 +392,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="2-part.md">
+        <li class="chapter " data-level="1.3.2" data-path="../2-chapter/2-part.md">
             
                 <span>
             
@@ -442,7 +442,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第三节</a>
+        <a href=".." >端口规划</a>
     </h1>
 </div>
 
@@ -460,8 +460,143 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x9752;&#x5C9B;&#x6D77;&#x4FE1;&#x7F51;&#x7EDC;&#x79D1;&#x6280;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2022-03-07 15:33:42
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF08;web&#x5E94;&#x7528;&#xFF09;&#x7AEF;&#x53E3;&#x89C4;&#x5212;"><b>1.2.1.1. </b>&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF08;WEB&#x5E94;&#x7528;&#xFF09;&#x7AEF;&#x53E3;&#x89C4;&#x5212;</a></li></ul></div><a href="#&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF08;web&#x5E94;&#x7528;&#xFF09;&#x7AEF;&#x53E3;&#x89C4;&#x5212;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF08;web&#x5E94;&#x7528;&#xFF09;&#x7AEF;&#x53E3;&#x89C4;&#x5212;"><a name="&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF08;web&#x5E94;&#x7528;&#xFF09;&#x7AEF;&#x53E3;&#x89C4;&#x5212;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF08;web&#x5E94;&#x7528;&#xFF09;&#x7AEF;&#x53E3;&#x89C4;&#x5212;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.1. &#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF08;WEB&#x5E94;&#x7528;&#xFF09;&#x7AEF;&#x53E3;&#x89C4;&#x5212;</h1>
+<table>
+<thead>
+<tr>
+<th>&#x9002;&#x914D;&#x5668;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x7AEF;&#x53E3;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>active-mq&#x670D;&#x52A1;</td>
+<td>mq&#x670D;&#x52A1;</td>
+<td>8261/61616</td>
+</tr>
+<tr>
+<td>zookeeper</td>
+<td></td>
+<td>2181</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">&#x5DE5;&#x7A0B;&#x540D;&#x79F0;</th>
+<th>tomcat&#x7684;conf&#x76EE;&#x5F55;&#x4E0B;server.xml</th>
+<th>tomcat&#x7684;conf&#x76EE;&#x5F55;&#x4E0B;server.xml</th>
+<th>tomcat&#x7684;conf&#x76EE;&#x5F55;&#x4E0B;server.xml</th>
+<th>tomcat&#x7684;conf&#x76EE;&#x5F55;&#x4E0B;server.xml</th>
+<th>&#x9879;&#x76EE;&#x540D;.properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align:center"></td>
+<td>web&#x670D;&#x52A1;&#x7AEF;&#x53E3;</td>
+<td>Shutdown&#x7AEF;&#x53E3;</td>
+<td>AJP&#x7AEF;&#x53E3;</td>
+<td>redirectPort&#x7AEF;&#x53E3;</td>
+<td>dubbo&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align:center">sso</td>
+<td>801</td>
+<td>18010</td>
+<td>18011</td>
+<td>18012</td>
+<td>2801</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align:center">log</td>
+<td>803</td>
+<td>18030</td>
+<td>18031</td>
+<td>18032</td>
+<td>2803</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align:center">bsp</td>
+<td>80</td>
+<td>18000</td>
+<td>18001</td>
+<td>18002</td>
+<td>280</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align:center">eoms-base</td>
+<td>802</td>
+<td>18020</td>
+<td>18021</td>
+<td>18022</td>
+<td>2802</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align:center">wbc</td>
+<td>812</td>
+<td>18120</td>
+<td>18121</td>
+<td>18122</td>
+<td>2812</td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align:center">himap</td>
+<td>804</td>
+<td>18040</td>
+<td>18403</td>
+<td>18042</td>
+<td>2804</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align:center">leg</td>
+<td>8002</td>
+<td>18500</td>
+<td>18501</td>
+<td>18502</td>
+<td>28002</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align:center">eoms</td>
+<td>81</td>
+<td>18100</td>
+<td>18101</td>
+<td>18102</td>
+<td>281</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td style="text-align:center">dubbo</td>
+<td>9090</td>
+<td>29090</td>
+<td>29091</td>
+<td>29092</td>
+</tr>
+</tbody>
+</table>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x9752;&#x5C9B;&#x6D77;&#x4FE1;&#x7F51;&#x7EDC;&#x79D1;&#x6280;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-03-30 11:37:18
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -506,12 +641,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第二章">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 应用服务器(WEB应用)">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="2-part.md" class="navigation navigation-next " aria-label="Next page: 第四节">
+                <a href="activemq.html" class="navigation navigation-next " aria-label="Next page: activemq">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -522,7 +657,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第三节","level":"1.3.1","depth":2,"next":{"title":"第四节","level":"1.3.2","depth":2,"path":"2-chapter/2-part.md","ref":"2-chapter/2-part.md","articles":[]},"previous":{"title":"第二章","level":"1.3","depth":1,"path":"2-chapter/README.md","ref":"2-chapter/README.md","articles":[{"title":"第三节","level":"1.3.1","depth":2,"path":"2-chapter/1-part.md","ref":"2-chapter/1-part.md","articles":[]},{"title":"第四节","level":"1.3.2","depth":2,"path":"2-chapter/2-part.md","ref":"2-chapter/2-part.md","articles":[]}]},"dir":"neutral"},"config":{"plugins":["-lunr","-search","-sharing","-highlight","splitter","hide-element","copy-code-button","back-to-top-button","search-plus@^0.0.11","search-pro","prism@^2.0.3","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","chart@^0.2.0","toggle-chapters","theme-comscore","popup","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 青岛海信网络科技股份有限公司","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"javascript"}},"include-csv":{},"emphasize":{},"ace":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":false},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"back-to-top-button":{},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"linan3","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"开发文档","language":"zh-hans","links":{},"gitbook":"*","description":"devDoc","extension":null},"file":{"path":"2-chapter/1-part.md","mtime":"2022-03-07T07:33:42.603Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-30T03:45:56.587Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"端口规划","level":"1.2.1","depth":2,"next":{"title":"activemq","level":"1.2.2","depth":2,"path":"1-chapter/activemq.md","ref":"1-chapter/activemq.md","articles":[]},"previous":{"title":"应用服务器(WEB应用)","level":"1.2","depth":1,"path":"1-chapter/README.md","ref":"1-chapter/README.md","articles":[{"title":"端口规划","level":"1.2.1","depth":2,"path":"1-chapter/port.md","ref":"1-chapter/port.md","articles":[]},{"title":"activemq","level":"1.2.2","depth":2,"path":"1-chapter/activemq.md","ref":"1-chapter/activemq.md","articles":[]},{"title":"zookeeper","level":"1.2.3","depth":2,"path":"1-chapter/zookeeper.md","ref":"1-chapter/zookeeper.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-highlight","splitter","hide-element","copy-code-button","back-to-top-button","search-plus@^0.0.11","search-pro","prism@^2.0.3","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","chart@^0.2.0","toggle-chapters","theme-comscore","popup","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 青岛海信网络科技股份有限公司","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"javascript"}},"include-csv":{},"emphasize":{},"ace":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":false},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"back-to-top-button":{},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"linan3","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"开发文档","language":"zh-hans","links":{},"gitbook":"*","description":"devDoc","extension":null},"file":{"path":"1-chapter/port.md","mtime":"2022-03-30T03:37:18.303Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-30T03:45:56.587Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
