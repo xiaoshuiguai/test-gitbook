@@ -18,45 +18,22 @@ service iptables stop
 Linux CentOS 7可能为以下命令，同样要关闭防火墙。
 
 ```bash
-1、启动防火墙
-systemctl start firewalld.service
-或
+#1、启动防火墙
 systemctl start firewalld
-
-2、关闭防火墙
-systemctl stop firewalld.service
-或
+#2、关闭防火墙
 systemctl stop firewalld
-
-3、重启防火墙
-systemctl restart firewalld.service
-或
+#3、重启防火墙
 systemctl restart firewalld
-
-4、查看防火墙状态
-firewall-cmd --state
-systemctl status firewalld.service
-或
+#4、查看防火墙状态
 systemctl status firewalld
-
-5、开机禁用防火墙
-systemctl disable firewalld.service
-或
+#5、开机禁用防火墙
 systemctl disable firewalld
-
-6、开机启用防火墙
-systemctl enable firewalld.service
-或
+#6、开机启用防火墙
 systemctl enable firewalld
-
-7、查看防火墙开机是否启动
-systemctl is-enabled firewalld.service
-或
+#7、查看防火墙开机是否启动
 systemctl is-enabled firewalld
-
-8、查看已启动的服务列表
+#8、查看已启动的服务列表
 systemctl list-unit-files|grep enabled
-
-9、查看启动失败的服务列表
+#9、查看启动失败的服务列表
 systemctl --failed
 ```
