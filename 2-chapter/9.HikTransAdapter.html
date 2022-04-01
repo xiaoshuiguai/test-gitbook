@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>应用服务器(适配器) · 开发文档</title>
+        <title>HikTransAdapter · 开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -131,10 +131,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1.adapeter-port.html" />
+    <link rel="next" href="10.hibisadapter.html" />
     
     
-    <link rel="prev" href="../1-chapter/12.leg.html" />
+    <link rel="prev" href="8.vip-fake-gps-adapter.html" />
     
 
     
@@ -496,7 +496,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="./">
             
                 <a href="./">
             
@@ -632,7 +632,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.9" data-path="9.HikTransAdapter.html">
+        <li class="chapter active" data-level="1.3.9" data-path="9.HikTransAdapter.html">
             
                 <a href="9.HikTransAdapter.html">
             
@@ -793,7 +793,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >应用服务器(适配器)</a>
+        <a href=".." >HikTransAdapter</a>
     </h1>
 </div>
 
@@ -811,16 +811,89 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;"><b>1.3.1.1. </b>&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;"><a name="&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1.1. &#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;</h2>
-<ol>
-<li>&#x8F66;&#x961F;&#x901A;&#x8FC7;&#x624B;&#x673A;&#x5B89;&#x88C5;<code>App</code>&#xFF0C;&#x4E0E;<code>HiLEG_IST</code>&#x9002;&#x914D;&#x5668;&#x8FDE;&#x63A5;&#x3002;</li>
-<li><code>HiLEG_IST</code>&#x9002;&#x914D;&#x5668;&#x5411;mq&#x4E3B;&#x9898;HIATMP.HISENSE.GPS&#x53D1;&#x9001;&#x62A5;&#x6587;&#x3002;</li>
-<li><code>LEG_GPS_SERVER</code>&#x63A5;&#x6536;<strong>HIATMP.HISENSE.GPS</strong>&#x62A5;&#x6587;&#xFF0C;&#x5904;&#x7406;&#x540E;&#x5165;&#x6570;&#x636E;&#x5E93;LEG_GPS_DATA&#x8868;&#xFF1B;&#x540C;&#x65F6;&#x5411;mq&#x4E3B;&#x9898;HIATMP.HISENSE.HILEG.GPSINF&#x53D1;&#x9001;&#x8F66;&#x961F;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x3002;</li>
-<li>&#x4FE1;&#x53F7;&#x81EA;&#x52A8;&#x52E4;&#x52A1;&#x63A5;&#x53D7;<strong>HIATMP.HISENSE.HILEG.GPSINF</strong>&#x6570;&#x636E;&#xFF0C;&#x8FDB;&#x884C;&#x4FE1;&#x53F7;&#x706F;&#x63A7;&#x5236;&#x3002;</li>
-</ol>
-<p><img src="project.png" alt="1"></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#hiktransadapter&#x6295;&#x5927;&#x5C4F;&#x9002;&#x914D;&#x5668;"><b>1.3.9.1. </b>HikTransAdapter&#x6295;&#x5927;&#x5C4F;&#x9002;&#x914D;&#x5668;</a></li><ul><li><span class="title-icon "></span><a href="#&#x529F;&#x80FD;&#x63CF;&#x8FF0;"><b>1.3.9.1.1. </b>&#x529F;&#x80FD;&#x63CF;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x670D;&#x52A1;&#x90E8;&#x7F72;"><b>1.3.9.1.2. </b>&#x670D;&#x52A1;&#x90E8;&#x7F72;</a></li></ul><li><span class="title-icon "></span><a href="#mq&#x5730;&#x5740;---mqurltcp27102424261616---hiktopichiatmphisensehiktransfer---manualtopichiatmphisensetaskvideo---mq&#x7528;&#x6237;&#x540D;---mquserhiatmp---mq&#x5BC6;&#x7801;------mqpwdhiatmp-------videoradius200---videogroupnum3-------wuhan-&#x89C6;&#x9891;&#x901A;&#x9053;&#x4E13;&#x7528;&#x53C2;&#x6570;---videochannelnum12---videoheartsecond300-----------thread-pool-info---threadpoolcorepoolsize10---threadpoolmaxpoolsize20---threadpoolqueuecapacity100--------wuhan&#x5B9A;&#x5236;commoncity&#xFF0C;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x6539;&#x4E3A;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x62FC;&#x97F3;---commoncitywuhan"><b>1.3.9.2. </b>mq&#x5730;&#x5740;   MQUrl=tcp://27.10.24.242:61616   HikTopic=HIATMP.HISENSE.HIKTRANSFER   ManualTopic=HIATMP.HISENSE.TASKVIDEO   #mq&#x7528;&#x6237;&#x540D;   MQUSER=hiatmp   #mq&#x5BC6;&#x7801;      MQPwd=hiatmp       video_radius=200   video_group_num=3       #wuhan &#x89C6;&#x9891;&#x901A;&#x9053;&#x4E13;&#x7528;&#x53C2;&#x6570;   video_channel_num=12   video_heart_second=300       #    thread pool info   threadPool_corePoolSize=10   threadPool_maxPoolSize=20   threadPool_queueCapacity=100       # wuhan&#x5B9A;&#x5236;common_city&#xFF0C;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x6539;&#x4E3A;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x62FC;&#x97F3;   common_city=wuhan</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;---urljdbcoraclethin2710242411521hiatmpdb---&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;---usernamehileg---&#x6570;&#x636E;&#x5E93;&#x5BC6;&#x7801;---passwordhisleg2018"><b>1.3.9.3. </b>&#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;   url=jdbc:oracle:thin://@27.10.24.241:1521/hiatmpdb   #&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;   username=hileg   #&#x6570;&#x636E;&#x5E93;&#x5BC6;&#x7801;   password=His#Leg2018</a></li><ul><li><span class="title-icon "></span><a href="#&#x76F8;&#x5173;&#x534F;&#x8BAE;"><b>1.3.9.3.1. </b>&#x76F8;&#x5173;&#x534F;&#x8BAE;</a></li></ul></ul></div><a href="#hiktransadapter&#x6295;&#x5927;&#x5C4F;&#x9002;&#x914D;&#x5668;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="hiktransadapter&#x6295;&#x5927;&#x5C4F;&#x9002;&#x914D;&#x5668;"><a name="hiktransadapter&#x6295;&#x5927;&#x5C4F;&#x9002;&#x914D;&#x5668;" class="anchor-navigation-ex-anchor" href="#hiktransadapter&#x6295;&#x5927;&#x5C4F;&#x9002;&#x914D;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.9.1. HikTransAdapter&#x6295;&#x5927;&#x5C4F;&#x9002;&#x914D;&#x5668;</h1>
+<h2 id="&#x529F;&#x80FD;&#x63CF;&#x8FF0;"><a name="&#x529F;&#x80FD;&#x63CF;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x529F;&#x80FD;&#x63CF;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.9.1.1. &#x529F;&#x80FD;&#x63CF;&#x8FF0;</h2>
+<p>HikTransAdapter&#x4E3A;&#x6295;&#x5927;&#x5C4F;&#x9002;&#x914D;&#x5668;&#xFF0C;&#x901A;&#x8FC7;HIATMP.HISENSE.HIKTRANSFER &#x4E3B;&#x9898;MQ&#x5411;&#x6295;&#x5C4F;&#x5382;&#x5BB6;&#x53D1;&#x9001;&#x5F53;&#x524D;&#x8F66;&#x961F;&#x6240;&#x5904;&#x9002;&#x914D;&#x7684;&#x5B9E;&#x65F6;&#x72B6;&#x6001;&#xFF0C;&#x89C6;&#x9891;&#x5382;&#x5BB6;&#x901A;&#x8FC7;&#x89E3;&#x6790;MQ&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x89C6;&#x9891;&#x5728;&#x5927;&#x5C4F;&#x5E55;&#x6295;&#x653E;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x6CE8;&#xFF1A;&#x4E0D;&#x540C;&#x5730;&#x533A;&#x5927;&#x5C4F;&#x5E55;&#x6295;&#x653E;&#x5382;&#x5BB6;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#xFF0C;&#x6545;&#x5404;&#x5730;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x76F8;&#x5173;&#x6295;&#x5C4F;&#x5382;&#x5BB6;&#x7684;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#xFF0C;&#x6545;&#x73B0;&#x573A;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x76F8;&#x5173;&#x9700;&#x6C42;&#xFF0C;&#x6216;&#x76F8;&#x5173;&#x6295;&#x5C4F;&#x5382;&#x5BB6;&#x65E0;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x6B64;&#x9002;&#x914D;&#x5668;&#x53EF;&#x4EE5;&#x4E0D;&#x8FDB;&#x884C;&#x90E8;&#x7F72;&#x3002;</p>
+<h2 id="&#x670D;&#x52A1;&#x90E8;&#x7F72;"><a name="&#x670D;&#x52A1;&#x90E8;&#x7F72;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x90E8;&#x7F72;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.9.1.2. &#x670D;&#x52A1;&#x90E8;&#x7F72;</h2>
+<p>1.&#x5C06;HikTransAdapter.zip&#x653E;&#x5165;/usr/hileg/deploy/adapter&#x4E0B;&#xFF0C;unzip&#x89E3;&#x538B;&#x3002;</p>
+<p>   unzip   HikTransAdapter.zip   </p>
+<p>\2. &#x6253;&#x5F00;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x7684;/usr/hileg/deploy/adapter/HikTransAdapter/bin&#x6587;&#x4EF6;&#x5939;,&#x4FEE;&#x6539;&#xFF1A;config.properties</p>
+<h1 id="mq&#x5730;&#x5740;---mqurltcp27102424261616---hiktopichiatmphisensehiktransfer---manualtopichiatmphisensetaskvideo---mq&#x7528;&#x6237;&#x540D;---mquserhiatmp---mq&#x5BC6;&#x7801;------mqpwdhiatmp-------videoradius200---videogroupnum3-------wuhan-&#x89C6;&#x9891;&#x901A;&#x9053;&#x4E13;&#x7528;&#x53C2;&#x6570;---videochannelnum12---videoheartsecond300-----------thread-pool-info---threadpoolcorepoolsize10---threadpoolmaxpoolsize20---threadpoolqueuecapacity100--------wuhan&#x5B9A;&#x5236;commoncity&#xFF0C;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x6539;&#x4E3A;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x62FC;&#x97F3;---commoncitywuhan"><a name="mq&#x5730;&#x5740;---mqurltcp27102424261616---hiktopichiatmphisensehiktransfer---manualtopichiatmphisensetaskvideo---mq&#x7528;&#x6237;&#x540D;---mquserhiatmp---mq&#x5BC6;&#x7801;------mqpwdhiatmp-------videoradius200---videogroupnum3-------wuhan-&#x89C6;&#x9891;&#x901A;&#x9053;&#x4E13;&#x7528;&#x53C2;&#x6570;---videochannelnum12---videoheartsecond300-----------thread-pool-info---threadpoolcorepoolsize10---threadpoolmaxpoolsize20---threadpoolqueuecapacity100--------wuhan&#x5B9A;&#x5236;commoncity&#xFF0C;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x6539;&#x4E3A;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x62FC;&#x97F3;---commoncitywuhan" class="anchor-navigation-ex-anchor" href="#mq&#x5730;&#x5740;---mqurltcp27102424261616---hiktopichiatmphisensehiktransfer---manualtopichiatmphisensetaskvideo---mq&#x7528;&#x6237;&#x540D;---mquserhiatmp---mq&#x5BC6;&#x7801;------mqpwdhiatmp-------videoradius200---videogroupnum3-------wuhan-&#x89C6;&#x9891;&#x901A;&#x9053;&#x4E13;&#x7528;&#x53C2;&#x6570;---videochannelnum12---videoheartsecond300-----------thread-pool-info---threadpoolcorepoolsize10---threadpoolmaxpoolsize20---threadpoolqueuecapacity100--------wuhan&#x5B9A;&#x5236;commoncity&#xFF0C;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x6539;&#x4E3A;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x62FC;&#x97F3;---commoncitywuhan"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.9.2. mq&#x5730;&#x5740;   MQUrl=tcp://27.10.24.242:61616   HikTopic=HIATMP.HISENSE.HIKTRANSFER   ManualTopic=HIATMP.HISENSE.TASKVIDEO   #mq&#x7528;&#x6237;&#x540D;   MQUSER=hiatmp   #mq&#x5BC6;&#x7801;      MQPwd=hiatmp       video_radius=200   video_group_num=3       #wuhan &#x89C6;&#x9891;&#x901A;&#x9053;&#x4E13;&#x7528;&#x53C2;&#x6570;   video_channel_num=12   video_heart_second=300       #    thread pool info   threadPool_corePoolSize=10   threadPool_maxPoolSize=20   threadPool_queueCapacity=100       # wuhan&#x5B9A;&#x5236;common_city&#xFF0C;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x6539;&#x4E3A;&#x5176;&#x4ED6;&#x57CE;&#x5E02;&#x62FC;&#x97F3;   common_city=wuhan</h1>
+<p>&#x4FEE;&#x6539;/usr/hileg/deploy/adapter/HikTransAdapter/bin/db.properties</p>
+<h1 id="&#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;---urljdbcoraclethin2710242411521hiatmpdb---&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;---usernamehileg---&#x6570;&#x636E;&#x5E93;&#x5BC6;&#x7801;---passwordhisleg2018"><a name="&#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;---urljdbcoraclethin2710242411521hiatmpdb---&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;---usernamehileg---&#x6570;&#x636E;&#x5E93;&#x5BC6;&#x7801;---passwordhisleg2018" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;---urljdbcoraclethin2710242411521hiatmpdb---&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;---usernamehileg---&#x6570;&#x636E;&#x5E93;&#x5BC6;&#x7801;---passwordhisleg2018"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.9.3. &#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;   url=jdbc:oracle:thin://@27.10.24.241:1521/hiatmpdb   #&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;   username=hileg   #&#x6570;&#x636E;&#x5E93;&#x5BC6;&#x7801;   password=His#Leg2018</h1>
+<p><strong>1)</strong>  <strong>&#x72B6;&#x6001;&#x68C0;&#x67E5;</strong></p>
+<p>   <strong>ps   -ef|grep</strong> HikTransAdapter   </p>
+<p><strong>2)</strong>  <strong>&#x542F;&#x52A8;&#x548C;&#x5173;&#x95ED;&#x65B9;&#x5F0F;</strong></p>
+<p>&#x6CE8;&#x610F;&#x5148;&#x8D4B;&#x6743;&#x9650;&#xFF1A;</p>
+<p>cd /usr/hileg/deploy/adapter/HikTransAdapter</p>
+<p>chmod 777 *</p>
+<p>&#x542F;&#x52A8;&#x547D;&#x4EE4;&#xFF1A;./startServer.sh</p>
+<p>&#x200B;                                                  </p>
+<p>&#x505C;&#x6B62;&#x547D;&#x4EE4;&#xFF1A;./stopServer.sh</p>
+<p><strong>3)</strong>  <strong>&#x67E5;&#x770B;&#x65E5;&#x5FD7;</strong></p>
+<p>cd /usr/hileg/deploy/adapter/HikTransAdapter/log</p>
+<p>tail &#x2013;f  HikTransAdapter.log</p>
+<p>&#x56DE;&#x5230;&#x5B9E;&#x65BD;&#x603B;&#x4F53;&#x6D41;&#x7A0B;</p>
+<h2 id="&#x76F8;&#x5173;&#x534F;&#x8BAE;"><a name="&#x76F8;&#x5173;&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#&#x76F8;&#x5173;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.9.3.1. &#x76F8;&#x5173;&#x534F;&#x8BAE;</h2>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>value</th>
+<th>&#x5B50;&#x5BF9;&#x8C61;</th>
+<th>&#x91CA;&#x610F;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cameras</td>
+<td>&#x89C6;&#x9891;&#x6570;&#x7EC4;</td>
+<td>Cid1/Cid2//Cid3//Cid4</td>
+<td>cid1&#x4EE3;&#x8868;&#x79FB;&#x52A8;&#x8F66;&#x8F7D;&#x89C6;&#x9891;   cid2&#x3001;cid3&#x3001;cid4&#x4EE3;&#x8868;&#x666E;&#x901A;&#x89C6;&#x9891;&#xFF0C;&#x5176;&#x4E2D;&#x5B89;&#x4FDD;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x8FD1;&#x666F;&#x3001;&#x4E2D;&#x666F;&#x3001;&#x8FDC;&#x666F;&#x89C6;&#x9891;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Index</td>
+<td>&#x6444;&#x50CF;&#x673A;&#x7B2C;&#x4E09;&#x65B9;&#x7F16;&#x53F7;&#xFF0C;&#x9700;&#x8981;&#x548C;&#x6D77;&#x5EB7;&#x5E73;&#x53F0;&#x7684;&#x8BBE;&#x5907;&#x7F16;&#x53F7;&#x5BF9;&#x5E94;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>DevType</td>
+<td>&#x6444;&#x50CF;&#x673A;&#x7C7B;&#x578B;6&#x4EE3;&#x8868;&#x79FB;&#x52A8;&#x8F66;&#x8F7D;&#x89C6;&#x9891;1&#x3001;2&#x3001;9&#x4EE3;&#x8868;&#x666E;&#x901A;&#x5730;&#x9762;&#x89C6;&#x9891;8&#x4EE3;&#x8868;&#x9AD8;&#x70B9;&#x89C6;&#x9891;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Preset</td>
+<td>&#x9884;&#x7F6E;&#x4F4D;&#x7F16;&#x53F7;&#xFF0C;&#x9700;&#x8981;&#x548C;&#x6D77;&#x5EB7;&#x5E73;&#x53F0;&#x5BF9;&#x5E94;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td>Gid</td>
+<td>&#x4EFB;&#x52A1;&#x7F16;&#x53F7;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>&#x6295;&#x5C4F;&#x6A21;&#x5F0F;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x7528;&#x5230;2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>&#x4EE3;&#x8868;&#x4EFB;&#x52A1;&#x56FD;&#x5BB6;</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&#x534F;&#x8BAE;&#x6837;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">&quot;Cameras&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">&quot;Cid&quot;</span><span class="token operator">:</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;DevType&quot;</span><span class="token operator">:</span><span class="token string">&quot;6&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Index&quot;</span><span class="token operator">:</span><span class="token string">&quot;37020200001310012511&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Preset&quot;</span><span class="token operator">:</span><span class="token string">&quot;-1&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token property">&quot;Cid&quot;</span><span class="token operator">:</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;DevType&quot;</span><span class="token operator">:</span><span class="token string">&quot;9&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Index&quot;</span><span class="token operator">:</span><span class="token string">&quot;37021200001310010079&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Preset&quot;</span><span class="token operator">:</span><span class="token string">&quot;-1&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>                 <span class="token punctuation">{</span><span class="token property">&quot;Cid&quot;</span><span class="token operator">:</span><span class="token string">&quot;3&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;DevType&quot;</span><span class="token operator">:</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Index&quot;</span><span class="token operator">:</span><span class="token string">&quot;37021200001310010957&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Preset&quot;</span><span class="token operator">:</span><span class="token string">&quot;-1&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>          <span class="token punctuation">{</span><span class="token property">&quot;Cid&quot;</span><span class="token operator">:</span><span class="token string">&quot;4&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;DevType&quot;</span><span class="token operator">:</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Index&quot;</span><span class="token operator">:</span><span class="token string">&quot;37029500001310014561&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Preset&quot;</span><span class="token operator">:</span><span class="token string">&quot;-1&quot;</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token property">&quot;Gid&quot;</span><span class="token operator">:</span><span class="token string">&quot;222X&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Mode&quot;</span><span class="token operator">:</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;Name&quot;</span><span class="token operator">:</span><span class="token string">&quot;&#x4E2D;&#x56FD;(CHN)&quot;</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x9752;&#x5C9B;&#x6D77;&#x4FE1;&#x7F51;&#x7EDC;&#x79D1;&#x6280;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2022-04-01 11:42:58
+2022-04-01 11:42:14
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -865,12 +938,12 @@
 
             
                 
-                <a href="../1-chapter/12.leg.html" class="navigation navigation-prev " aria-label="Previous page: leg安保平台">
+                <a href="8.vip-fake-gps-adapter.html" class="navigation navigation-prev " aria-label="Previous page: vip-fake-gps-adapter">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="1.adapeter-port.html" class="navigation navigation-next " aria-label="Next page: 端口规划">
+                <a href="10.hibisadapter.html" class="navigation navigation-next " aria-label="Next page: hibisadapter">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -881,7 +954,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"应用服务器(适配器)","level":"1.3","depth":1,"next":{"title":"端口规划","level":"1.3.1","depth":2,"path":"2-chapter/1.adapeter-port.md","ref":"2-chapter/1.adapeter-port.md","articles":[]},"previous":{"title":"leg安保平台","level":"1.2.12","depth":2,"path":"1-chapter/12.leg.md","ref":"1-chapter/12.leg.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-highlight","splitter","hide-element","copy-code-button","back-to-top-button","search-plus@^0.0.11","search-pro","prism@^2.0.3","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","chart@^0.2.0","toggle-chapters","theme-comscore","popup","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 青岛海信网络科技股份有限公司","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"javascript"}},"include-csv":{},"emphasize":{},"ace":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":false},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"back-to-top-button":{},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"linan3","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"开发文档","language":"zh-hans","links":{},"gitbook":"*","description":"devDoc","extension":null},"file":{"path":"2-chapter/README.md","mtime":"2022-04-01T03:42:58.080Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-01T03:44:07.752Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HikTransAdapter","level":"1.3.9","depth":2,"next":{"title":"hibisadapter","level":"1.3.10","depth":2,"path":"2-chapter/10.hibisadapter.md","ref":"2-chapter/10.hibisadapter.md","articles":[]},"previous":{"title":"vip-fake-gps-adapter","level":"1.3.8","depth":2,"path":"2-chapter/8.vip-fake-gps-adapter.md","ref":"2-chapter/8.vip-fake-gps-adapter.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-highlight","splitter","hide-element","copy-code-button","back-to-top-button","search-plus@^0.0.11","search-pro","prism@^2.0.3","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","chart@^0.2.0","toggle-chapters","theme-comscore","popup","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 青岛海信网络科技股份有限公司","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"javascript"}},"include-csv":{},"emphasize":{},"ace":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":false},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"back-to-top-button":{},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"linan3","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"开发文档","language":"zh-hans","links":{},"gitbook":"*","description":"devDoc","extension":null},"file":{"path":"2-chapter/9.HikTransAdapter.md","mtime":"2022-04-01T03:42:14.508Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-01T03:44:07.752Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

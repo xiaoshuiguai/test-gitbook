@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>应用服务器(适配器) · 开发文档</title>
+        <title>LEG_GPS_SERVER · 开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -131,10 +131,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1.adapeter-port.html" />
+    <link rel="next" href="7.GpsDutyMonitorAdapterSender.html" />
     
     
-    <link rel="prev" href="../1-chapter/12.leg.html" />
+    <link rel="prev" href="5.tomcat-ftp2http.html" />
     
 
     
@@ -496,7 +496,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="./">
             
                 <a href="./">
             
@@ -587,7 +587,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="6.LEG_GPS_SERVER.html">
+        <li class="chapter active" data-level="1.3.6" data-path="6.LEG_GPS_SERVER.html">
             
                 <a href="6.LEG_GPS_SERVER.html">
             
@@ -793,7 +793,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >应用服务器(适配器)</a>
+        <a href=".." >LEG_GPS_SERVER</a>
     </h1>
 </div>
 
@@ -811,16 +811,42 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;"><b>1.3.1.1. </b>&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;"><a name="&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1.1. &#x5B89;&#x4FDD;&#x9002;&#x914D;&#x5668;&#x4E4B;&#x95F4;&#x5173;&#x7CFB;</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#leggpsserver"><b>1.3.6.1. </b>LEG_GPS_SERVER</a></li><ul><li><span class="title-icon "></span><a href="#&#x529F;&#x80FD;&#x63CF;&#x8FF0;"><b>1.3.6.1.1. </b>&#x529F;&#x80FD;&#x63CF;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x670D;&#x52A1;&#x90E8;&#x7F72;"><b>1.3.6.1.2. </b>&#x670D;&#x52A1;&#x90E8;&#x7F72;</a></li></ul></ul></div><a href="#leggpsserver" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="leggpsserver"><a name="leggpsserver" class="anchor-navigation-ex-anchor" href="#leggpsserver"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.6.1. LEG_GPS_SERVER</h1>
+<h2 id="&#x529F;&#x80FD;&#x63CF;&#x8FF0;"><a name="&#x529F;&#x80FD;&#x63CF;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x529F;&#x80FD;&#x63CF;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.6.1.1. &#x529F;&#x80FD;&#x63CF;&#x8FF0;</h2>
+<p>&#x8BE5;&#x6A21;&#x5757;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x5E73;&#x53F0;&#x8BBE;&#x5907;GPS&#x53D1;&#x9001;&#x7684;MQ&#x6570;&#x636E;&#x7684;&#x63A5;&#x5165;&#xFF0C;&#x9884;&#x5904;&#x7406;&#x540E;&#x5B58;&#x50A8;&#x529F;&#x80FD;&#x3002;</p>
+<h2 id="&#x670D;&#x52A1;&#x90E8;&#x7F72;"><a name="&#x670D;&#x52A1;&#x90E8;&#x7F72;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x90E8;&#x7F72;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.6.1.2. &#x670D;&#x52A1;&#x90E8;&#x7F72;</h2>
 <ol>
-<li>&#x8F66;&#x961F;&#x901A;&#x8FC7;&#x624B;&#x673A;&#x5B89;&#x88C5;<code>App</code>&#xFF0C;&#x4E0E;<code>HiLEG_IST</code>&#x9002;&#x914D;&#x5668;&#x8FDE;&#x63A5;&#x3002;</li>
-<li><code>HiLEG_IST</code>&#x9002;&#x914D;&#x5668;&#x5411;mq&#x4E3B;&#x9898;HIATMP.HISENSE.GPS&#x53D1;&#x9001;&#x62A5;&#x6587;&#x3002;</li>
-<li><code>LEG_GPS_SERVER</code>&#x63A5;&#x6536;<strong>HIATMP.HISENSE.GPS</strong>&#x62A5;&#x6587;&#xFF0C;&#x5904;&#x7406;&#x540E;&#x5165;&#x6570;&#x636E;&#x5E93;LEG_GPS_DATA&#x8868;&#xFF1B;&#x540C;&#x65F6;&#x5411;mq&#x4E3B;&#x9898;HIATMP.HISENSE.HILEG.GPSINF&#x53D1;&#x9001;&#x8F66;&#x961F;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x3002;</li>
-<li>&#x4FE1;&#x53F7;&#x81EA;&#x52A8;&#x52E4;&#x52A1;&#x63A5;&#x53D7;<strong>HIATMP.HISENSE.HILEG.GPSINF</strong>&#x6570;&#x636E;&#xFF0C;&#x8FDB;&#x884C;&#x4FE1;&#x53F7;&#x706F;&#x63A7;&#x5236;&#x3002;</li>
+<li><p>&#x5C06;LEG_GPS_SERVER.zip&#x653E;&#x5165;/usr/hileg/deploy/adapter&#x4E0B;&#xFF0C;unzip&#x89E3;&#x538B;&#x3002;</p>
+<p>unzip   LEG_GPS_SERVER.zip   </p>
+</li>
+<li><p>&#x6253;&#x5F00;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x7684;/usr/hileg/deploy/adapter /LEG_GPS_SERVER/bin&#x6587;&#x4EF6;&#x5939;,&#x4FEE;&#x6539;&#xFF1A;</p>
+<ul>
+<li>appconfig.xml</li>
+<li>config.properties</li>
+<li>database.properties</li>
+</ul>
+</li>
 </ol>
-<p><img src="project.png" alt="1"></p>
+<p><strong>1.</strong>  <strong>&#x72B6;&#x6001;&#x68C0;&#x67E5;</strong></p>
+<p>&#x542F;&#x52A8;&#x8BE5;&#x6A21;&#x5757;&#x524D;&#x8BF7;&#x5148;&#x68C0;&#x67E5;&#x80FD;&#x5426;&#x6B63;&#x5E38;&#x767B;&#x9646;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x80FD;&#x5426;&#x6B63;&#x5E38;&#x767B;&#x9646;&#x548C;&#x67E5;&#x8BE2;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x76F8;&#x5173;&#x8868;&#x662F;&#x5426;&#x9501;&#x5B9A;&#x3002;</p>
+<p><strong>2.</strong>  <strong>&#x542F;&#x52A8;&#x548C;&#x5173;&#x95ED;&#x65B9;&#x5F0F;</strong></p>
+<p>1)   &#x542F;&#x52A8;&#x65B9;&#x5F0F;</p>
+<p>&#x8F93;&#x5165;&#x547D;&#x4EE4;sh startServer.sh&#x5373;&#x53EF;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x3002;</p>
+<p>2)   &#x5173;&#x95ED;&#x65B9;&#x5F0F;</p>
+<p>&#x8F93;&#x5165;&#x547D;&#x4EE4;sh stopServer.sh&#x5373;&#x53EF;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x3002;</p>
+<p><strong>3.</strong>  <strong>&#x67E5;&#x770B;&#x6A21;&#x5757;&#x8FD0;&#x884C;&#x72B6;&#x6001;</strong></p>
+<p>&#x8F93;&#x5165;&#x547D;&#x4EE4;ps-ef|grep LEG_GPS_SERVER&#xFF0C;&#x5355;&#x51FB;&#x56DE;&#x8F66;&#x952E;&#xFF0C;&#x5982;&#x679C;&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x7F16;&#x53F7;&#x4E8E;&#x8FDB;&#x7A0B;&#x540D;&#x79F0;&#x5219;&#x8868;&#x793A;&#x8FDB;&#x7A0B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x8BF4;&#x660E;&#x7A0B;&#x5E8F;&#x5DF2;&#x505C;&#x6B62;&#x8FD0;&#x884C;&#x3002;</p>
+<p><strong>4.</strong>  <strong>&#x67E5;&#x770B;&#x6A21;&#x5757;&#x8FD0;&#x884C;&#x65E5;&#x5FD7;</strong></p>
+<p>&#x8F93;&#x5165;&#x547D;&#x4EE4;cd logs&#x5373;&#x53EF;&#x8FDB;&#x5165;&#x7A0B;&#x5E8F;&#x65E5;&#x5FD7;&#x6240;&#x5728;&#x76EE;&#x5F55;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5BF9;&#x65E5;&#x5FD7;&#x8FDB;&#x884C;&#x67E5;&#x770B;&#xFF1A;</p>
+<p>cat &#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x540D;</p>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x5BFC;&#x51FA;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;WinSCP&#x8F6F;&#x4EF6;&#x767B;&#x5F55;&#xFF0C;&#x53CC;&#x51FB;&#x8FDB;&#x5165;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#xFF0C;&#x5C06;&#x6587;&#x4EF6;&#x62D6;&#x62FD;&#x51FA;&#x6765;&#x8FDB;&#x884C;&#x5BFC;&#x51FA;&#x3002;</p>
+<p><strong>5.</strong>  <strong>&#x68C0;&#x67E5;&#x67D0;&#x8BBE;&#x5907;&#x6570;&#x636E;&#x5165;&#x5E93;&#x60C5;&#x51B5;</strong></p>
+<p>&#x4F7F;&#x7528;PLSQL&#x7A0B;&#x5E8F;&#x767B;&#x9646;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x65B0;&#x5EFA;SQL&#x67E5;&#x8BE2;&#x5982;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p>&#x8F93;&#x5165;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF0C;&#x5982;</p>
+<p>select*from leg_gps_data where cvehid =&apos;370213000000120009&apos;orderby datasavetime desc</p>
+<p>&#x5373;&#x53EF;&#x67E5;&#x8BE2;&#x8BBE;&#x5907;&#x53F7;&#x4E3A;370213000000120009&#x8BBE;&#x5907;&#x4E0A;&#x4F20;&#x7684;GPS&#x6570;&#x636E;&#xFF0C;&#x5176;&#x4ED6;&#x8BBE;&#x5907;&#x7684;&#x6309;&#x7167;&#x6B64;&#x683C;&#x5F0F;&#x66FF;&#x6362;&#x8BBE;&#x5907;&#x53F7;&#x5373;&#x53EF;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x62D6;&#x52A8;&#x4E0B;&#x65B9;&#x6EDA;&#x52A8;&#x6761;&#x5373;&#x53EF;&#x627E;&#x5230;DATASAVETIME&#x9879;&#xFF0C;&#x7531;&#x4E0A;&#x5230;&#x4E0B;&#x5373;&#x4E3A;&#x7531;&#x65B0;&#x5230;&#x65E7;&#x6309;&#x7167;&#x65F6;&#x95F4;&#x6392;&#x5217;&#x7684;&#x6700;&#x65B0;&#x6570;&#x636E;&#xFF0C;DECARLONG&#x548C;DCARLAT&#x5206;&#x522B;&#x4E3A;&#x8BBE;&#x5907;&#x4E0A;&#x4F20;&#x7684;GPS&#x7684;&#x7ECF;&#x5EA6;&#x548C;&#x7EAC;&#x5EA6;&#xFF0C;NVEHSPEED&#x4E3A;&#x8BBE;&#x5907;&#x4E0A;&#x4F20;&#x7684;&#x7684;&#x901F;&#x5EA6;&#x503C;&#xFF08;&#x516C;&#x91CC;/&#x65F6;&#xFF09;&#x3002;</p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x9752;&#x5C9B;&#x6D77;&#x4FE1;&#x7F51;&#x7EDC;&#x79D1;&#x6280;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2022-04-01 11:42:58
+2022-04-01 11:42:14
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -865,12 +891,12 @@
 
             
                 
-                <a href="../1-chapter/12.leg.html" class="navigation navigation-prev " aria-label="Previous page: leg安保平台">
+                <a href="5.tomcat-ftp2http.html" class="navigation navigation-prev " aria-label="Previous page: tomcat-ftp2http">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="1.adapeter-port.html" class="navigation navigation-next " aria-label="Next page: 端口规划">
+                <a href="7.GpsDutyMonitorAdapterSender.html" class="navigation navigation-next " aria-label="Next page: GpsDutyMonitorAdapterSender">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -881,7 +907,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"应用服务器(适配器)","level":"1.3","depth":1,"next":{"title":"端口规划","level":"1.3.1","depth":2,"path":"2-chapter/1.adapeter-port.md","ref":"2-chapter/1.adapeter-port.md","articles":[]},"previous":{"title":"leg安保平台","level":"1.2.12","depth":2,"path":"1-chapter/12.leg.md","ref":"1-chapter/12.leg.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-highlight","splitter","hide-element","copy-code-button","back-to-top-button","search-plus@^0.0.11","search-pro","prism@^2.0.3","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","chart@^0.2.0","toggle-chapters","theme-comscore","popup","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 青岛海信网络科技股份有限公司","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"javascript"}},"include-csv":{},"emphasize":{},"ace":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":false},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"back-to-top-button":{},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"linan3","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"开发文档","language":"zh-hans","links":{},"gitbook":"*","description":"devDoc","extension":null},"file":{"path":"2-chapter/README.md","mtime":"2022-04-01T03:42:58.080Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-01T03:44:07.752Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"LEG_GPS_SERVER","level":"1.3.6","depth":2,"next":{"title":"GpsDutyMonitorAdapterSender","level":"1.3.7","depth":2,"path":"2-chapter/7.GpsDutyMonitorAdapterSender.md","ref":"2-chapter/7.GpsDutyMonitorAdapterSender.md","articles":[]},"previous":{"title":"tomcat-ftp2http","level":"1.3.5","depth":2,"path":"2-chapter/5.tomcat-ftp2http.md","ref":"2-chapter/5.tomcat-ftp2http.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-highlight","splitter","hide-element","copy-code-button","back-to-top-button","search-plus@^0.0.11","search-pro","prism@^2.0.3","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","chart@^0.2.0","toggle-chapters","theme-comscore","popup","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 青岛海信网络科技股份有限公司","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"javascript"}},"include-csv":{},"emphasize":{},"ace":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":false},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"back-to-top-button":{},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"linan3","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"开发文档","language":"zh-hans","links":{},"gitbook":"*","description":"devDoc","extension":null},"file":{"path":"2-chapter/6.LEG_GPS_SERVER.md","mtime":"2022-04-01T03:42:14.508Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-01T03:44:07.752Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
